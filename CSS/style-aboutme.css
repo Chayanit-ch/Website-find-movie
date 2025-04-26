@@ -513,8 +513,9 @@ section{
     }
 
     .box3{
-        margin: 40px 25px;
-        height:4600px;
+        width: 90%;
+        margin: 40px auto;
+        height: 4600px;
     }
 
     .img-profile{
@@ -564,6 +565,6 @@ section{
     }
 
     .pic5-1, .pic5-2, .pic5-3, .pic5-4{
-        margin: 10px 115px;
+        margin: 10px auto;
     }
 }
