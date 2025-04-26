@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(238, 253, 253);
+    font-family: 'Times New Roman';
+    padding-top: 80px;
+}
+
+nav{
+    background-color: rgb(15, 108, 170);
+    height: 80px;
+    max-width: 100%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    left: 0;
+}
+
+.container{
+    max-width: 80%;
+    padding: 1.2rem 0;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.nav-con{
+    display: flex;
+    justify-content: space-between;
+    color: lightyellow;
+    font-size: 1.3rem;
+    max-width: 100%;
+}
+
+.menu{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+    max-width: 100%;
+}
+.menu li a{
+    text-decoration: none;
+    list-style: none;
+    color: lightyellow;
+    padding: 20px;
+    font-size: 1.1rem;
+    max-width: 100%;
+}
+
+.menu a:hover{
+    color: rgb(255, 238, 0);
+}
+
+.image{
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    width: 100%;
+    height: 780px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(https://wallpapercat.com/w/full/e/9/e/869074-1920x1080-desktop-1080p-disney-background-photo.jpg);
+}
+
+.box{
+    display: flex;
+    margin: 0px 70px 0px 70px;
+    justify-content: space-between;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    /*gap: 10px;*/
+}
+
+.box1 {
+    display: flex;
+    flex-direction: column; /* เรียงแนวตั้ง */
+    justify-content: space-between; /* ช่องว่างเท่า ๆ กัน */
+    border-style: solid;
+    width: 550px;
+    height: 462px; /* เพิ่มความสูงนิดหน่อยเพื่อความสวยงาม */
+    border-radius: 20px;
+    border-color: lightgray;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    margin: 2rem;
+    text-align: center;
+    line-height: 1.23;
+    background-color: rgb(248, 251, 252);
+}
+
+.box1 p{
+    margin-bottom: 25px;
+}
+
+.box1 img {
+    border-radius: 15px;
+    align-self: center;
+}
+
+.box1 button {
+    margin-top: auto; /* ดันปุ่มไปด้านล่าง */
+    padding: 8px 10px;
+    border-radius: 10px;
+    background-color: rgb(109, 198, 250);
+    font-size: 16px;
+    width: 70px;
+    border-width: 1.9px;
+    text-align: center;
+    align-self: center;
+}
+
+.box1 button:hover {
+    background-color: rgb(12, 121, 194);
+    transition: 0.3s;
+}
+
+.box1 h1{
+    margin: 10px;
+}
+
+.box2{
+    border-style: solid;
+    width: 500px;
+    height: 420px;
+    border-radius: 20px;
+    border-color: lightgray;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    margin: 2rem;
+    text-align: center;
+    max-width: 100%;
+    background-color: rgb(248, 251, 252);
+    img{
+        border-radius: 15px;
+    }
+}
+.box2 h1{
+    margin: 10px;
+}
+
+.box3{
+    border-style: solid;
+    width: 500px;
+    height: 420px;
+    border-radius: 20px;
+    border-color: lightgray;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    margin: 2rem;
+    text-align: center;
+    max-width: 100%;
+    background-color: rgb(248, 251, 252);
+    img{
+        border-radius: 15px;
+    }
+}
+.box3 h1{
+    margin: 10px;
+}
+
+button{
+    padding: 8px 10px;
+    margin: 6px;
+    border-radius: 10px;
+    background-color: rgb(109, 198, 250);
+    font-size: 16px;
+    border-width: 1.9px;
+    text-decoration: none;
+}
+button:hover{
+    padding: 8px 10px;
+    margin: 6px;
+    border-radius: 10px;
+    background-color: rgb(12, 121, 194);
+    transition: 0.3s;
+}
+img{
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+}
+
+img:hover{
+    transform: translateY(-4px);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+}
+
+.bar-footer{
+    background-color: rgb(15, 108, 170);
+    width: 100%;
+    height: 80px;
+    box-shadow: 5px 5px 10px 8px rgba(0.3, 0.3, 0.3, 0.3);
+    padding: 10px;
+    justify-content: space-between;
+    color: lightyellow ;
+    align-content: center;
+    bottom: 0;
+}
+.element{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    padding: 10px;
+    margin: 10px 110px;
+}
+.time{
+    font-size: 1.3rem;
+    display: flex;
+}
+#current-time{
+    margin: 3px 5px;
+}
+.texttime{
+    margin: 0px 15px;
+}
+.create{
+    margin-top: -5px;
+}
+
+.searchbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 0 0;
+}
+
+
+#input-search{
+    width: 500px;
+    height: 35px;
+    margin-bottom: 0;
+    margin-right: 5px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+#search-movie{
+    margin: 0;
+}
+.wrapper {
+    min-height: 100vh; /* เต็มความสูงหน้าจอ */
+    display: flex;
+    flex-direction: column;
+}
+
+section{
+    flex: 1;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.menu-icon .bar {
+    background-color: lightyellow;
+    height: 4px;
+    width: 25px;
+    margin: 3px;
+    border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .box {
+        width: 90%;
+        height: auto;
+        padding: 15px;
+        margin: 30px auto;
+    }
+
+    .nav-con {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.2rem;
+        padding: 0px 20px;
+    }
+
+    .menu {
+        /*display: none;
+        flex-direction: column;
+        align-items: center;
+        background-color: #0b66a3;
+        width: 100%;
+        padding: 10px 0;*/
+        display: none;
+        max-height: 0;
+        overflow: hidden;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(129, 182, 230);
+        width: 100%;
+        padding: 0;
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    .menu.active {
+        display: block;
+        max-height: 500px;
+        padding: auto;
+        margin: auto;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+    .menu-icon:hover {
+        display: flex;
+        background-color: rgb(201, 114, 0);
+    }
+
+
+    .menu li a {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .element {
+        flex-direction: column;
+        align-items: center;
+        margin: 1px auto;
+    }
+
+    .time {
+        font-size: 1.3rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texttime {
+        margin: 5px 0;
+    }
+
+    .bar-footer{
+        height: 180px;
+        width: 100%;
+    }
+    .create{
+        font-size: 0.8rem;
+        margin: 3px auto;
+    }
+
+    .box {
+        grid-template-columns: 1fr;
+        margin: 0 20px;
+    }
+
+    .box1,.box2,.box3 {
+        width: 100%;
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    .box1 button {
+        width: 100px;
+    }
+
+    .searchbar {
+        flex-direction: column;
+        margin: 30px 0;
+    }
+
+    #input-search {
+        width: 80%;
+        margin-bottom: 10px;
+    }
+
+    #search-movie {
+        width: 50%;
+    }
+
+    /* ปรับภาพ header */
+    .image {
+        height: 500px;
+        background-position: center;
+    }
+}
