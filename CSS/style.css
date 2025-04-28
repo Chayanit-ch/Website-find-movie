@@ -81,19 +81,13 @@ section{
 
 .p1{
     display: flex;
-    padding: 30px 0 0 0;
+    padding: 40px;
     margin: 5px auto;
     text-align: center;
     align-items: center;
     justify-content: space-around;
-}
-
-.p2{
-    display: flex;
-    padding: 30px;
-    margin: 5px;
-    text-align: center;
-    align-items: center;
+    text-indent: 50px;
+    line-height: 40px;
 }
 
 .what{
